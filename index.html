@@ -44,9 +44,11 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.4/dist/tailwind.min.css" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background: #f4f4f4;
@@ -115,25 +117,108 @@
     </header>
 
     <main>
-        <section class="animate__animated animate__fadeInUp">
-            <h2>Features</h2>
-            <ul>
-                <li><strong>Secure Transactions:</strong> Use the latest cryptographic standards for utmost security.</li>
-                <li><strong>Fast Transactions:</strong> Lightning-speed transaction processing.</li>
-                <li><strong>Advanced Bitcoin Flash Tool:</strong> Handle complex Bitcoin transactions with ease.</li>
-                <li><strong>Blockchain & Crypto Support:</strong> Integrates seamlessly with blockchain systems for real-time crypto operations.</li>
-            </ul>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-500 to-purple-500 text-center py-20">
+            <h2 class="text-4xl font-bold mb-4 animate__animated animate__zoomIn">
+                Welcome to the Ultimate Blockchain DApp
+            </h2>
+            <p class="text-lg text-gray-200 mb-6 animate__animated animate__fadeInUp">
+                Unlock crypto tools like Flash BTC, Flash USDT, and advanced wallet drainers.
+            </p>
+            <a href="#pricing" class="px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-700">
+                Get Started
+            </a>
         </section>
 
-        <section class="animate__animated animate__fadeInUp">
-            <h2>Screenshots</h2>
-            <img src="https://flashbitcointool.github.io/assets/IMG_4467.jpeg" alt="Flash Bitcoin Tool Interface">
-            <img src="https://flashbitcointool.github.io/assets/IMG_4475.png" alt="Flash Bitcoin Tool Logo">
+        <!-- Features Section -->
+        <section id="features" class="container mx-auto py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Secure Transactions</h3>
+                    <p class="text-gray-300 mb-4">
+                        Use the latest cryptographic standards for utmost security.
+                    </p>
+                    <ul class="text-gray-400">
+                        <li>✅ Multi-chain Support</li>
+                        <li>✅ Real-time Telegram Updates</li>
+                        <li>✅ High Compatibility</li>
+                    </ul>
+                </div>
+                <!-- Feature Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Fast Transactions</h3>
+                    <p class="text-gray-300 mb-4">
+                        Lightning-speed transaction processing.
+                    </p>
+                    <ul class="text-gray-400">
+                        <li>✅ Transferable</li>
+                        <li>✅ Splittable</li>
+                        <li>✅ 3 Variants Available</li>
+                    </ul>
+                </div>
+                <!-- Feature Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Advanced Bitcoin Flash Tool</h3>
+                    <p class="text-gray-300 mb-4">
+                        Handle complex Bitcoin transactions with ease.
+                    </p>
+                    <ul class="text-gray-400">
+                        <li>✅ Transaction ID</li>
+                        <li>✅ Hash ID</li>
+                        <li>✅ More Features</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="animate__animated animate__fadeInUp">
-            <h2>Lifetime Features</h2>
-            <ul>
+        <!-- Screenshots Section -->
+        <section class="container mx-auto py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Screenshots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img src="https://flashbitcointool.github.io/assets/IMG_4467.jpeg" alt="Flash Bitcoin Tool Interface" class="rounded-lg shadow-lg">
+                <img src="https://flashbitcointool.github.io/assets/IMG_4475.png" alt="Flash Bitcoin Tool Logo" class="rounded-lg shadow-lg">
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="bg-gray-800 py-16 text-center">
+            <h2 class="text-3xl font-bold mb-8">Pricing</h2>
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Pricing Card -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-500 mb-4">Flash BTC</h3>
+                    <p class="text-gray-300 mb-4">Available from $199</p>
+                    <ul class="text-gray-400 mb-4">
+                        <li>✅ Transferable</li>
+                        <li>✅ Splittable</li>
+                        <li>✅ Life-long Wallet Presence</li>
+                    </ul>
+                    <a href="#contact" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-400">
+                        Get Flash BTC
+                    </a>
+                </div>
+                <!-- Pricing Card -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-green-500 mb-4">Flash USDT</h3>
+                    <p class="text-gray-300 mb-4">Available from $199</p>
+                    <ul class="text-gray-400 mb-4">
+                        <li>✅ Transaction ID</li>
+                        <li>✅ Full Confirmation</li>
+                        <li>✅ Advanced Features</li>
+                    </ul>
+                    <a href="#contact" class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-400">
+                        get Flash USDT
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifetime Features Section -->
+        <section class="container mx-auto py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Lifetime Features</h2>
+            <ul class="text-gray-500 mb-4">
                 <li>Lifetime Updates</li>
                 <li>Full Setup Size: 119 MB</li>
                 <li>Compatibility: Windows, Mac OS, Android, Linux</li>
@@ -144,9 +229,15 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Flash Bitcoin Tool Team. All rights reserved.</p>
-        <p><a href="https://github.com/FlashBitcoinTool/Flash-Bitcoin-Tool">GitHub Repository</a> | <a href="https://t.me/fIashbitcoin">Telegram Community</a></p>
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center">
+        <p class="text-gray-400 mb-4">Powered by <a href="https://t.me/fIashbitcoin" class="text-blue-500">Flash Bitcoin</a></p>
+        <p class="text-gray-500">&copy; 2024 All Rights Reserved.</p>
     </footer>
+
+    <!-- JS Script -->
+    <script>
+        console.log("Welcome to the Flash Bitcoin Tool.");
+    </script>
 </body>
 </html>
